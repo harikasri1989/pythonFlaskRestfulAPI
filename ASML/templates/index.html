@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- <head>
+            <script language="text/javaScript" src="/ASML/jqueryFile.js"></script>
+        
+    </head> -->
+    <body>
+        <h1>ASML Machine Maintenance App </h1>
+        <title> ASML Machine Maintenance APP</title>
+            <form name "passval" action="." method="POST" target="_blank">
+                Enter the Id for Service Action/ Action Plan:
+                <input type="text" name="idForAction">
+                <br><br>
+                Select operation to perform:<br>
+                <fieldset> <legend> Read operations </legend>
+                    <input type="radio" name="ActionRadio" value="readService"> Read Service Action<br>
+                    <input type="radio" name="ActionRadio" value="readServiceAction"> Read Action Plans under Service Action<br>
+                    <input type="radio" name="ActionRadio" value="readAction"> Read Action Plan<br>
+                </fieldset>
+<br>
+                <fieldset> <legend> Create operations </legend>
+                <input type="radio" name="ActionRadio" value="createService"> Create Service Action <br>
+                    name: <input type="text" name="nameForCreateService"/> 
+                    machineId: <input type="text" name="machineIdForCreateService"/> 
+                    startTime: <input type="text" name="startTimeForCreateService"/> 
+                    endTime: <input type="text" name="endTimeForCreateService"/> <br>
+                <input type="radio" name="ActionRadio" value="createAction"> Create Action Plan<br>
+                    name: <input type="text" name="nameForCreateAction"/> 
+                    startTime: <input type="text" name="startTimeForCreateAction"/> 
+                    endTime: <input type="text" name="endTimeForCreateAction"/> 
+                </fieldset>
+<br>
+                <fieldset> <legend> Update operations </legend>
+                <input type="radio" name="ActionRadio" value="updateService"> Update Service Action<br>
+                name: <input type="text" name="nameForUpdateService" /> 
+                machineId: <input type="text" name="machineIdForUpdateService"/> 
+                startTime: <input type="text" name="startTimeForUpdateService"/> 
+                endTime: <input type="text" name="endTimeForUpdateService" /> <br>
+                <input type="radio" name="ActionRadio" value="updateAction"> Update Action Plan<br>
+                name: <input type="text" name="nameForUpdateAction"/> 
+                startTime: <input type="text"name="startTimeForUpdateAction"/> 
+                endTime: <input type="text" name="endTimeForUpdateAction"/> 
+                </fieldset>
+<br>
+                <fieldset> <legend> Delete operations </legend>
+                    <input type="radio" name="ActionRadio" value="deleteService"> Delete Service Action<br>
+                    <input type="radio" name="ActionRadio" value="deleteAction"> Delete Action Plan<br><br>
+                </fieldset>
+<br>
+                <input type="submit" name="submitAction" value="Submit"> 
+            </form>
+
+    </body>
+</html>
